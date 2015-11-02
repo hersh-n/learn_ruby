@@ -20,6 +20,24 @@ def first_word(string)
 	array[0]
 end
 
+def titleize (string)
+	little_words = ["and","over","the"]
+	array = string.split(' ')
+	array.each do |word|
+		unless little_words.include?(word)
+			word.capitalize!
+		end
+	end
+	array[0].capitalize!
+	array.join(" ")
+
+
+end
+
+
+
+
+
 
 
 
